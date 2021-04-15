@@ -1,9 +1,10 @@
 import Page from '../components/Page';
 
-export function MyApp ({ Component, pageProps}) {
-  return(
+// eslint-disable-next-line react/prop-types
+export default function MyApp({ Component, pageProps }) {
+  return (
     <Page>
-      <Component {...pageProps}/>
+      <Component {...pageProps} />
     </Page>
-  )
+  );
 }
